@@ -1,0 +1,98 @@
+DEMO VIDEO AND LIVE DEPLOYMENT
+
+===========================================
+DEMO VIDEO
+===========================================
+
+Location: ../demo.mp4 (in the main project directory)
+File: demo.mp4
+Format: MP4 video file
+Instructions: Download the file to watch the demonstration
+
+The demo video showcases:
+- Universal FHEVM SDK installation and setup
+- Live Private Rideshare Platform demonstration
+- Multi-framework integration examples
+- Contract interaction on Sepolia testnet
+- All SDK features in action
+
+For instructions on the demo content, see DEMO_INSTRUCTIONS.md
+
+===========================================
+LIVE DEPLOYMENT
+===========================================
+
+Frontend (Vercel):
+https://ride-share-six.vercel.app
+
+Smart Contract (Sepolia):
+Address: 0x5986FF19B524534F159af67f421ca081c6F5Acff
+Explorer: https://sepolia.etherscan.io/address/0x5986FF19B524534F159af67f421ca081c6F5Acff
+Network: Sepolia Testnet (Chain ID: 11155111)
+Status: Deployed and Verified
+
+===========================================
+LOCAL DEVELOPMENT
+===========================================
+
+To run the example locally:
+
+1. Navigate to example directory:
+   cd examples/rideshare
+
+2. Install dependencies:
+   npm install
+
+3. Start development server:
+   npm run dev
+
+4. Visit in browser:
+   http://localhost:1311
+
+===========================================
+DEMO FEATURES
+===========================================
+
+The live demo demonstrates:
+✅ Wallet connection (RainbowKit)
+✅ FHEVM SDK integration
+✅ Driver registration and verification
+✅ Ride request and matching
+✅ Real-time statistics
+✅ Privacy-preserving transactions
+✅ Modern glassmorphism UI
+✅ Responsive mobile design
+
+===========================================
+TECHNICAL STACK
+===========================================
+
+Frontend:
+- Next.js 14 (App Router)
+- React 18.3
+- TypeScript 5.6
+- Wagmi v2
+- RainbowKit 2.1
+- Universal FHEVM SDK
+- Tailwind CSS
+- Radix UI
+
+Backend:
+- Smart Contract on Sepolia
+- FHEVM for privacy-preserving operations
+- Zama Gateway for decryption
+
+===========================================
+CONTACT & SUPPORT
+===========================================
+
+For questions or issues:
+- Check documentation in docs/ directory
+- Review API reference: docs/API_REFERENCE.md
+- See integration examples: SDK_INTEGRATION_EXAMPLES.md
+- Visit the deployed application: https://ride-share-six.vercel.app
+
+---
+
+Last Updated: 2024-10-24
+Status: ✅ Ready for Competition Submission
