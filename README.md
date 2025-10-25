@@ -8,7 +8,7 @@ This SDK demonstrates a universal approach to FHEVM integration that works seaml
 
 ### Live Deployment
 
-- **Contract**: [0x5986FF19B524534F159af67f421ca081c6F5Acff](https://sepolia.etherscan.io/address/0x5986FF19B524534F159af67f421ca081c6F5Acff) (Sepolia)
+- **Contract**: [0x87288E6cEE215e01d2704c0d4d01EAF1d192659d](https://sepolia.etherscan.io/address/0x87288E6cEE215e01d2704c0d4d01EAF1d192659d) (Sepolia)
 - **Frontend Demo**: [Private Rideshare Platform](https://ride-share-six.vercel.app/) - Live on Vercel
 
 ## ✨ Features
@@ -277,7 +277,7 @@ MIT License - see [LICENSE](./LICENSE) for details
 
 - [Zama Documentation](https://docs.zama.ai/fhevm)
 - [FHEVM GitHub](https://github.com/zama-ai/fhevm)
-- [Example Deployment](https://sepolia.etherscan.io/address/0x5986FF19B524534F159af67f421ca081c6F5Acff)
+- [Example Deployment](https://sepolia.etherscan.io/address/0x87288E6cEE215e01d2704c0d4d01EAF1d192659d)
 
 ## 🏆 Competition Criteria
 
