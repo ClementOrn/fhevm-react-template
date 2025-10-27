@@ -22,5 +22,8 @@ export type {
   Network
 } from './types';
 
+// Utils exports
+export * from './utils';
+
 // Version
 export const VERSION = '1.0.0';
