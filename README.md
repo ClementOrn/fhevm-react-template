@@ -9,7 +9,7 @@ This SDK demonstrates a universal approach to FHEVM integration that works seaml
 ### Live Deployment
 
 - **Contract**: [0x87288E6cEE215e01d2704c0d4d01EAF1d192659d](https://sepolia.etherscan.io/address/0x87288E6cEE215e01d2704c0d4d01EAF1d192659d) (Sepolia)
-- **Frontend Demo**: [Private Rideshare Platform](https://ride-share-six.vercel.app/) - Live on Vercel
+- **Frontend Demo**: [Private Rideshare Platform](https://ride-share-gules.vercel.app/) - Live on Vercel
 
 ## ✨ Features
 
