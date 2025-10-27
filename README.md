@@ -22,6 +22,8 @@ This SDK demonstrates a universal approach to FHEVM integration that works seaml
 
 ## 🚀 Quick Start
 
+### Option 1: Use the SDK in Your Project
+
 ```bash
 # Install the SDK
 npm install @fhevm/universal-sdk
@@ -43,6 +45,29 @@ const tx = await fhevm.contract(contractAddress, abi).submitValue(encrypted)
 
 That's it! Less than 10 lines to get started with FHE.
 
+### Option 2: Run the Examples
+
+```bash
+# Clone the repository
+git clone https://github.com/zama-ai/fhevm-react-template.git
+cd fhevm-react-template
+
+# Install dependencies
+npm install
+
+# Run the Next.js complete example
+cd examples/next
+npm install
+npm run dev
+
+# Or run the Rideshare example
+cd examples/PrivateRideShare
+npm install
+npm run dev
+```
+
+Visit `http://localhost:3000` (or configured port) to see the examples in action.
+
 ## 📦 Installation
 
 ### NPM/Yarn
@@ -60,29 +85,165 @@ yarn add @fhevm/universal-sdk
 ## 🏗️ Architecture
 
 ```
-@fhevm/universal-sdk/
-├── core/           # Core FHEVM functionality
-│   ├── encryption  # Client-side encryption
-│   ├── decryption  # Gateway decryption
-│   └── contract    # Smart contract interaction
-├── react/          # React hooks (useFHEVM, useEncryption)
-├── vue/            # Vue composables
-└── types/          # TypeScript definitions
+universal-fhevm-sdk/
+├── packages/
+│   └── fhevm-sdk/          # Core SDK package
+│       ├── src/
+│       │   ├── core/       # Core FHEVM functionality
+│       │   │   └── client.ts
+│       │   ├── react/      # React hooks
+│       │   │   ├── hooks.tsx
+│       │   │   └── index.ts
+│       │   ├── types/      # TypeScript definitions
+│       │   │   └── index.ts
+│       │   ├── utils/      # Utility functions
+│       │   │   ├── encryption.ts
+│       │   │   ├── decryption.ts
+│       │   │   └── index.ts
+│       │   ├── vue/        # Vue composables (bonus)
+│       │   └── index.ts
+│       ├── package.json
+│       └── README.md
+├── examples/               # Example applications
+│   ├── next/              # Complete Next.js example with SDK integration
+│   └── PrivateRideShare/  # Rideshare demo application
+├── templates/             # Project templates
+│   └── nextjs/           # Next.js starter template
+├── docs/                 # Documentation
+└── README.md
 ```
 
 ## 💡 Examples
 
-### Example 1: Private Rideshare Platform (Next.js)
+### Example 1: Next.js Complete Integration
 
-A complete privacy-preserving rideshare application demonstrating:
-- Private driver location sharing
-- Encrypted ride fare negotiations
-- Confidential passenger ratings
-- Secure payment processing
+A comprehensive Next.js example demonstrating all SDK features with full integration.
 
-See the [examples/rideshare](./examples/rideshare) directory for full implementation.
+**Features:**
+- ✅ Complete App Router structure with API routes
+- ✅ FHE encryption/decryption demos using SDK
+- ✅ Homomorphic computation examples
+- ✅ Key management interface
+- ✅ Banking and medical use case examples
+- ✅ Full SDK integration in all components and hooks
+- ✅ TypeScript support with SDK types
 
-### Example 2: Node.js Backend
+**Structure:**
+```
+examples/next/src/
+├── app/
+│   ├── api/
+│   │   ├── fhe/          # FHE operation routes (SDK integrated)
+│   │   │   ├── route.ts           # Main FHE operations
+│   │   │   ├── encrypt/route.ts   # Encryption API
+│   │   │   ├── decrypt/route.ts   # Decryption API
+│   │   │   └── compute/route.ts   # Computation API
+│   │   └── keys/route.ts          # Key management
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── providers.tsx
+├── components/
+│   ├── ui/               # Reusable UI components
+│   │   ├── Button.tsx
+│   │   ├── Input.tsx
+│   │   └── Card.tsx
+│   ├── fhe/              # FHE components (SDK integrated)
+│   │   ├── FHEProvider.tsx        # SDK Provider wrapper
+│   │   ├── EncryptionDemo.tsx     # Uses SDK encryption
+│   │   ├── ComputationDemo.tsx    # Uses SDK computation
+│   │   └── KeyManager.tsx         # SDK key management
+│   └── examples/         # Use case examples (SDK integrated)
+│       ├── BankingExample.tsx     # Banking use case
+│       └── MedicalExample.tsx     # Medical use case
+├── lib/
+│   ├── fhe/              # FHE utilities (SDK wrappers)
+│   │   ├── client.ts     # SDK client wrapper
+│   │   ├── server.ts     # Server-side SDK usage
+│   │   ├── keys.ts       # SDK key utilities
+│   │   └── types.ts      # SDK type extensions
+│   └── utils/            # Helper functions
+│       ├── security.ts
+│       └── validation.ts
+├── hooks/                # Custom React hooks (SDK based)
+│   ├── useFHE.ts         # Wraps SDK useFHEVM hook
+│   ├── useEncryption.ts  # Wraps SDK useEncryption
+│   └── useComputation.ts # Wraps SDK useContract
+└── types/                # TypeScript types
+    ├── fhe.ts            # FHE types (extends SDK types)
+    └── api.ts            # API types
+```
+
+**SDK Integration Points:**
+- All API routes use `FHEVMClient` from SDK
+- All React components use SDK hooks (`useFHEVM`, `useEncryption`, etc.)
+- All lib files wrap SDK core functionality
+- All types extend SDK type definitions
+
+See the [examples/next](./examples/next) directory for full implementation.
+
+### Example 2: Private Rideshare Platform (Next.js + React)
+
+A complete privacy-preserving rideshare application built with Next.js and React, demonstrating real-world FHE usage:
+
+**Features:**
+- ✅ Next.js 14 with App Router
+- ✅ Full SDK integration with React hooks
+- ✅ TypeScript throughout
+- ✅ Private driver location sharing
+- ✅ Encrypted ride fare negotiations
+- ✅ Confidential passenger ratings
+- ✅ Secure payment processing
+- ✅ Smart contract deployment with Hardhat
+- ✅ Professional UI with Tailwind CSS
+
+**Technology Stack:**
+- Frontend: Next.js 14, React 18, TypeScript
+- Blockchain: Hardhat, ethers.js, @fhevm/solidity
+- FHE: @fhevm/universal-sdk (full integration)
+- Styling: Tailwind CSS with custom theme
+- Development: ESLint, TypeScript strict mode
+
+**Structure:**
+```
+examples/PrivateRideShare/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   │   ├── layout.tsx       # Root layout
+│   │   ├── page.tsx         # Main application page
+│   │   ├── providers.tsx    # Context providers
+│   │   └── globals.css      # Global styles
+│   ├── components/          # React components
+│   │   ├── Header.tsx
+│   │   ├── PassengerTab.tsx
+│   │   ├── DriverTab.tsx
+│   │   ├── RidesTab.tsx
+│   │   ├── RideCard.tsx
+│   │   └── AvailableRides.tsx
+│   ├── hooks/               # Custom hooks
+│   │   ├── useWallet.ts     # Wallet connection
+│   │   └── useRideShare.ts  # Contract interactions
+│   ├── lib/
+│   │   ├── fhevm/           # SDK integration
+│   │   │   └── client.ts
+│   │   └── utils/           # Utilities
+│   └── types/               # TypeScript types
+├── contracts/               # Solidity contracts
+│   └── PrivateRideShare.sol
+├── scripts/                 # Deployment scripts
+│   └── deploy.js
+└── hardhat.config.js        # Hardhat configuration
+```
+
+**Getting Started:**
+```bash
+cd examples/PrivateRideShare
+npm install
+npm run dev  # Start development server on port 3000
+```
+
+See the [examples/PrivateRideShare](./examples/PrivateRideShare) directory for full implementation, including migration guide from static HTML to React.
+
+### Example 3: Node.js Backend
 
 ```typescript
 import { FHEVMClient } from '@fhevm/universal-sdk'
@@ -99,7 +260,7 @@ await client.submitTransaction({
 })
 ```
 
-### Example 3: React Hook
+### Example 4: React Hook
 
 ```typescript
 import { useFHEVM, useEncryption } from '@fhevm/universal-sdk/react'
