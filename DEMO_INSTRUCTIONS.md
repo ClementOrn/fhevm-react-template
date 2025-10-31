@@ -99,7 +99,7 @@ This file provides instructions for creating and recording the `demo.mp4` video 
 ## Video Checklist
 
 Before recording:
-- [ ] Local frontend running on http://localhost:1311
+- [ ] Local frontend running on http://localhost:3000
 - [ ] Contract deployed to Sepolia
 - [ ] Test wallet with Sepolia ETH
 - [ ] Second wallet for driver demo

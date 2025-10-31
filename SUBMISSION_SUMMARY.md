@@ -5,8 +5,7 @@
 **Project**: Universal FHEVM SDK
 **Purpose**: Framework-agnostic SDK for privacy-preserving applications
 **Status**: ✅ Complete and Ready for Submission
-**Date**: October 24, 2024
-
+ 
 ---
 
 ## 📁 What's Included
@@ -51,7 +50,7 @@ examples/rideshare/
 
 **Deployed**:
 - ✅ Contract: `0x5986FF19B524534F159af67f421ca081c6F5Acff` (Sepolia)
-- ✅ Frontend: Can run locally at http://localhost:1311
+- ✅ Frontend: Can run locally at http://localhost:3000
 - ✅ 52 test cases (reference in main project)
 
 ### 3. Documentation (`docs/`)
@@ -211,8 +210,8 @@ await contract.write('submit', [encrypted.handles])
 ### Frontend
 - **Live Demo**: https://ride-share-six.vercel.app
 - **Platform**: Vercel
-- **Local**: http://localhost:1311
-- **Port**: 1311
+- **Local**: http://localhost:3000
+- **Port**: 3000
 - **Framework**: Next.js 14
 - **Status**: ✅ Deployed and Functional
 
@@ -251,7 +250,7 @@ await contract.write('submit', [encrypted.handles])
    cd examples/rideshare
    npm install
    npm run dev
-   # Visit http://localhost:1311
+   # Visit http://localhost:3000
    ```
 
 5. **View Deployed Contract**

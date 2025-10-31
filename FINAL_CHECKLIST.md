@@ -208,7 +208,7 @@ await contract.write('submit', [encrypted.handles])
 - **Live Demo**: https://ride-share-six.vercel.app
 - **Platform**: Vercel
 - **Framework**: Next.js 14
-- **Port**: 1311 (local)
+- **Port**: 3000 (local)
 - **Status**: ✅ Deployed and Functional
 
 ### Demo Video ✅
@@ -299,7 +299,7 @@ cat README.md
 cd examples/rideshare
 npm install
 npm run dev
-# Visit http://localhost:1311
+# Visit http://localhost:3000
 ```
 
 ### For Reviewers

@@ -321,7 +321,7 @@ Universal Core (TypeScript)
 ### Frontend (Example)
 - **Live Demo**: https://ride-share-six.vercel.app
 - **Platform**: Vercel
-- **Local**: http://localhost:1311
+- **Local**: http://localhost:3000
 - **Status**: ✅ Deployed and Functional
 
 ### Demo Video
