@@ -4,7 +4,7 @@
   "description": "Private rideshare platform demonstrating Universal FHEVM SDK",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 1311",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
