@@ -74,7 +74,7 @@ npm run deploy:sepolia
 npm run dev
 ```
 
-The application will be available at http://localhost:1311
+The application will be available at http://localhost:3000
 
 ## Architecture
 
